@@ -1,16 +1,243 @@
-.header {
-    height:140px;
-    padding:16px;
-    background:plum;
-    border: 4px solid indigo;
-    display:flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-inline: 15px;
     
 }
-.item {
-    width: 60px;
-    height: 60px;
-    border: 4px solid darkslategray;
-    background: skyblue;
+
+/* style to header  */
+.header {
+    height: 70px;
+    background-color: #84a9dd;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #f9faf8;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+    text-transform: capitalize;
+
+}
+
+/* hero section */
+
+.hero {
+
+    background-color: #1f2937;
+    margin-bottom: 100px;
+
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 100px;
+    gap : 40px
+}
+
+.hero-content{
+    flex: 1;
+
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 15px 40px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    letter-spacing: .8px;
+}
+
+.hero-img{
+    flex: 1;
+    text-align: right;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+}
+
+/* cards-section */
+
+.cards-section {
+    margin-bottom: 100px;
+
+
+}
+
+.cards-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+
+.cards-section .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.cards-section .card {
+    flex: 1;
+    text-align: center;
+    color: #364153;
+    
+}
+    
+
+.cards-section img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid #ece6ea;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+/* testimonials-section */
+
+.testimonials-section {
+    background-color: #e5e7eb;
+    padding-block: 80px;
+
+
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.testimonial figcaption {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-top: 10px;
 }
 
 
+/* call to action */
+
+.to-action-section {
+    padding-block: 100px;
+}
+
+.action-card {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    color: #fff;
+    padding: 40px 80px;
+    border-radius: 8px;
+}
+
+.action-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.action-card p {
+    font-size: 15px;
+    color: #f0f9ff;;
+}
+
+.action-btn {
+    border: 2px solid #fff;
+    /* outline: none; */
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 7px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* the footer */
+
+.footer {
+    text-align: center;
+    padding-block: 30px;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    letter-spacing: .8px;
+    
+}
